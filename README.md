@@ -4,7 +4,8 @@ Purpose of the Website
 BrainyLand is a free engaging educational platform aimed at young learners. It offers a range of interactive resources designed to make learning fun and accessible. The website features educational games, story time, art activities, and puzzles that help children develop critical thinking skills and creativity in an enjoyable manner. The motivation behind it is to help those kids without access to proper educational means have somewhere to acquire knowledge for free and help them grow at the same time exposing them to technology as it is the future.
 
 Key Features of the Project
-Interactive Educational Games: Fun and interactive math games to strengthen math skills.
+<li>
+ Interactive Educational Games: Fun and interactive math games to strengthen math skills.
 Science Experiments: Simple experiments that spark curiosity about the natural world.
 Story Time: A collection of exciting stories that teach valuable life lessons.
 Art & Creativity: Activities that encourage artistic expression and creativity.
@@ -15,10 +16,11 @@ Technologies Used
 HTML: Used for structuring the content of the website.
 CSS: Custom styles created for a unique and engaging look.
 JavaScript: Added interactivity and dynamic behavior to the web pages.
-Bootstrap: (If included in the project) Used for responsive layout and design enhancements.
-Steps to Deploy the Website
-Clone or Download the Repository:
+Bootstrap: used for responsive layout and design enhancements. 
+</li>
 
+Steps to Deploy the Website
+Clone or Download the Repository
 Clone the project repository using the following command:
 bash
 Copy code
