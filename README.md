@@ -68,3 +68,7 @@ The footer contains copyright information and any other relevant links or acknow
 Interactivity:
 
 Interactive elements like buttons and links have hover effects and smooth transitions for a polished user experience.
+
+Work cited
+“Math Kids Images - Free Download on Freepik.” Freepik, https://www.freepik.com/free-photos-vectors/math-kids. Accessed 27 November 2024.
+
