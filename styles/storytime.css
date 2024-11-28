@@ -1,0 +1,46 @@
+/* Story Time Page Styling */
+#story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.story-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6600;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border: 2px solid #ff6600;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.story-title:hover {
+    background-color: #ffcc00;
+}
+
+.story-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffcc00;
+    border-top: 3px solid #ff9900;
+    color: #ff6600;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}

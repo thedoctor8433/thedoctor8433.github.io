@@ -1,0 +1,74 @@
+/* Science Game Styling */
+#quiz-container {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-option {
+    font-size: 1.2rem;
+    background-color: #ffcc00;
+    color: #000;
+    border: 2px solid #ff9900;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-option:hover {
+    background-color: #ff9900;
+    color: white;
+}
+
+.selected {
+    background-color: #00b3b3;
+    color: white;
+}
+
+#submit-answer {
+    background-color: #00b3b3;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+#submit-answer:hover {
+    background-color: #009999;
+}
+
+#feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffcc00;
+    border-top: 3px solid #ff9900;
+    color: #ff6600;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}

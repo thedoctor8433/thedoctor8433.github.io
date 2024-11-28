@@ -1,0 +1,27 @@
+/* Brain Teaser Game Styling */
+#game-info {
+    margin-bottom: 20px;
+}
+
+#hint {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#submit-guess {
+    width: 100%;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffcc00;
+    border-top: 3px solid #ff9900;
+    color: #ff6600;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}

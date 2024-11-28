@@ -1,0 +1,161 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif; /* Playful font for a child-friendly look */
+}
+
+/* Body styling */
+body {
+    background-color: #f7f7f7; /* Soft light background color */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ffcc00; /* Bright yellow background */
+    border-bottom: 3px solid #ff9900;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #ff6600; /* Warm orange text color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+.navbar .logout-btn {
+    background-color: #ff3366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout-btn:hover {
+    background-color: #e62e5d;
+}
+
+/* Main Content */
+.container {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Resource row layout */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Spacing between cards */
+    margin-top: 2rem;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border: 2px solid #ff9900;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff9900;
+}
+
+/* Card body */
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #ff3366;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Button styling */
+.btn-custom {
+    display: inline-block;
+    background-color: #00b3b3;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.btn-custom:hover {
+    background-color: #009999;
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Headers styling */
+h1 {
+    color: #ff3366; /* Bright pink color for main headings */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for playful effect */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffcc00;
+    border-top: 3px solid #ff9900;
+    color: #ff6600;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}

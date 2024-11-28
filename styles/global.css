@@ -1,0 +1,234 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif; /* Playful font for a child-friendly look */
+}
+
+/* Body styling */
+body {
+    background-color: #f7f7f7; /* Soft light background color */
+    color: #333;
+    font-family: 'Comic Sans MS', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ffcc00; /* Bright yellow background */
+    border-bottom: 3px solid #ff9900;
+}
+
+.navbar a {
+    color: #ff6600; /* Warm orange text color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar .btn {
+    margin-left: auto; /* Push the button to the far right */
+}
+
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+/* Container for pages */
+.container {
+    padding: 2rem 1rem;
+}
+
+/* Headers styling */
+h1 {
+    color: #ff3366; /* Bright pink color for main headings */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for playful effect */
+}
+
+/* Button styling */
+.btn-custom {
+    background-color: #00b3b3; /* Turquoise background for buttons */
+    color: white;
+    border-radius: 12px; /* Rounded buttons */
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #009999; /* Darker turquoise when hovered */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ff9900;
+    font-size: 1.1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Paragraph styling */
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffcc00;
+    border-top: 3px solid #ff9900;
+    color: #ff6600;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Quote display */
+#quote {
+    background-color: #fff7e6;
+    padding: 20px;
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ff3366;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for quote button */
+#generate-quote {
+    position: relative;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn-custom {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-custom {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+/* Floating Bubbles Animation */
+@keyframes floatBubbles {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    animation: floatBubbles linear infinite;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.bubble:nth-child(even) {
+    background: rgba(173, 216, 230, 0.7); /* Light blue bubbles */
+}
+
+.bubble:nth-child(odd) {
+    background: rgba(144, 238, 144, 0.7); /* Light green bubbles */
+}
+
+.bubble-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Make sure bubbles don't interfere with interactions */
+    z-index: -1; /* Place bubbles behind other content */
+}
+
+/* Bubble sizes */
+.bubble.small {
+    width: 30px;
+    height: 30px;
+}
+
+.bubble.medium {
+    width: 50px;
+    height: 50px;
+}
+
+.bubble.large {
+    width: 70px;
+    height: 70px;
+}
